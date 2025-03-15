@@ -1,0 +1,4 @@
+#Please import the downloaded file into Microsoft Excel or other speadsheet software
+miRNA_Acc.	Target_Acc.	Expectation	UPE$	miRNA_start	miRNA_end	Target_start	Target_end	miRNA_aligned_fragment	alignment	Target_aligned_fragment	Inhibition	Target_Desc.	Multiplicity
+ghr-miR390a	LNC_000512	4.0	-1.0	1	21	710	727	AAGCUCAGGAGGGAUAGCGCC	   ::::   ::::::.:.::	UUUGCUA---CUCCUGGGUUU	Cleavage		1
+ghr-miR156a	LNC_006174	5.0	-1.0	1	20	1704	1723	UGACAGAAGAGAGUGAGCAC	 : ::. :::::::.: :.:	UUCCUUCCUCUCUUUUUUUA	Cleavage		1

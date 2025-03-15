@@ -1,0 +1,14 @@
+type_stress,stress_treatments,type_ncRNA,nameOf_nc,methods,species,expression,title,PMID,sequence,pre-miRNA-secondary-structure,mature_sequence_mi,sequence_for_fold,rnafold,chr_id,start,end,strand,tissue,NCBI accession/Target_gene,type_of_lnc,description_of_lnc,mature_start,mature_end
+abiotic,Phosphate-deficiency,lncRNA,HvISP1,qRT-PCR,Hordeum vulgare,up-regulation,"Phosphate utilization efficiency correlates with expression of low-affinity phosphate transporters and noncoding RNA, IPS1, in barley ",21606317,">gi|18207493|gb|AV911716.1|AV911716 AV911716 K. Sato unpublished cDNA library, cv. Akashinriki vegetative stage leaves Hordeum vulgare subsp. vulgare cDNA clone baak1b13 3, mRNA sequence
+GNNTATATGTCCCTAACATTAACAAGTTAGATAAACAGACGATATGGTAGTGTGGGGTACATGTATGTCG
+CGCCGGGCACGGTGACCAACGCCGGCCATACAAAATGTAACTAAATGCAGGGCCTACTTTACCGGGTCTC
+ATCATCCAGTAACGTCAGACTGGCTAAATTAACATGCTTACCAGAGACTGATTGATTACAATGCGAATGT
+TGAATGGTCCTAGGAGACGGCGGCACAGAGGAGGGAGGGAGCTGCTTCAGGTGCACTTCACCGTCGAGGC
+GCCAGGCGACAGCTGCCCGTTGTTGACGGCGGATGGCGACTCATTGGGGGCCGCACCGGGTTGGCTGTCT
+ACTGCGGCGGCATCTGATTTGGTTTCAGATACTGTAGCATGAGCAATAGCAGGCTCGCCAGGCGCAGCAA
+CTGAGTTCTCAGTTGGTTTGCTTGCCGGAGGCGCTACTTCCTCCTCAAAATTCACCGGAGGAGCTTCCTG
+TGTCTTCACCTCCTCCAAACTTACCTGAGGAGCAGCATCAGCCTCGGATGGCTTAACATCTTCCTTCTTG
+TCTTCCATTGCTGGAGACGGAACGGCATCAGCTTCAGCTGGCTTGACATCTTCCTTGTCTTCAACCACTG
+GTG
+
+",,,GNNUAUAUGUCCCUAACAUUAACAAGUUAGAUAAACAGACGAUAUGGUAGUGUGGGGUACAUGUAUGUCGCGCCGGGCACGGUGACCAACGCCGGCCAUACAAAAUGUAACUAAAUGCAGGGCCUACUUUACCGGGUCUCAUCAUCCAGUAACGUCAGACUGGCUAAAUUAACAUGCUUACCAGAGACUGAUUGAUUACAAUGCGAAUGUUGAAUGGUCCUAGGAGACGGCGGCACAGAGGAGGGAGGGAGCUGCUUCAGGUGCACUUCACCGUCGAGGCGCCAGGCGACAGCUGCCCGUUGUUGACGGCGGAUGGCGACUCAUUGGGGGCCGCACCGGGUUGGCUGUCUACUGCGGCGGCAUCUGAUUUGGUUUCAGAUACUGUAGCAUGAGCAAUAGCAGGCUCGCCAGGCGCAGCAACUGAGUUCUCAGUUGGUUUGCUUGCCGGAGGCGCUACUUCCUCCUCAAAAUUCACCGGAGGAGCUUCCUGUGUCUUCACCUCCUCCAAACUUACCUGAGGAGCAGCAUCAGCCUCGGAUGGCUUAACAUCUUCCUUCUUGUCUUCCAUUGCUGGAGACGGAACGGCAUCAGCUUCAGCUGGCUUGACAUCUUCCUUGUCUUCAACCACUGGUG,...((((((((((((.(((((.((.(((............))).)).)))))))))).))))))).((..((((((((.(((((.....)))))))).((((...)))).........((((((....((((.((((......)))).)))).(((((.((((.(((..........)))))))...)))))..(((.((((......)))))))))))))......)))))..))(((.(((((((((((.(((.......)))))))...(((((((((((.(((((((((((((((.(((.(....(.((((......)))).)...).))).)))).))))))))...(((.((((.((((((.......)))))).)))).))).((((........))))))).)))))(.(((((((....))))))).).....((((((((((........(((((((.........(((((((......(((....)))))))))).........)))))))........)))))(((((......)))))...((((.((((.(((....))))))))))))))))(((((....)))))))))))..))))))).)))...(((...))).,,,,,--,--,lncRNA,"HvIPS1 plays a distinct role in the regulation of the low-affinity Pi transporters. The expression of HvIPS1 is highly correlated with the expression of HvPHT1;3 and HvPHT1;6 in the four barley genotypes tested under low-P conditions (Figs. 4 and 6), sugg",,

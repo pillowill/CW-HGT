@@ -1,0 +1,6 @@
+#Please import the downloaded file into Microsoft Excel or other speadsheet software
+miRNA_Acc.	Target_Acc.	Expectation	UPE$	miRNA_start	miRNA_end	Target_start	Target_end	miRNA_aligned_fragment	alignment	Target_aligned_fragment	Inhibition	Target_Desc.	Multiplicity
+mtr-miR2597	TCONS_00046739	4.0	-1.0	1	21	713	733	UUUGGUACUUCGUC--GAUUUGA	 :::::.  ::.:::::  .:::	ACAAAUUUAGAUGAAGU--UAAA	Cleavage		1
+mtr-miR399k	TCONS_00046739	4.0	-1.0	1	21	990	1012	UGCCAA-AGAAGAU-UUGCCCUG	 : : ::: .:::::: ::::::	AAUGUCAAUGUCUUCUCUUGGCA	Cleavage		1
+mtr-miR2668	TCONS_00046739	4.25	-1.0	1	22	1666	1686	UUCAUCCUUGCAAUUAGGGGUC	   : ::.:::::: ::: ::.	AGACACUGAUUGCA-GGAGGAG	Cleavage		1
+mtr-miR5208d	TCONS_00046739	4.75	-1.0	1	24	1340	1362	CAUAUUAGUCAUAUUUGUAGGCAU	: : :: .: .::: :.::.::::	AAGACUCUAUGUAU-AUUAGUAUG	Translation		1

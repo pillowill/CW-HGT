@@ -1,0 +1,12 @@
+#Please import the downloaded file into Microsoft Excel or other speadsheet software
+miRNA_Acc.	Target_Acc.	Expectation	UPE$	miRNA_start	miRNA_end	Target_start	Target_end	miRNA_aligned_fragment	alignment	Target_aligned_fragment	Inhibition	Target_Desc.	Multiplicity
+zma-miR408b	TCONS_00054544	4.5	-1.0	1	21	324	342	AGGGACGAGGCAGAGCAUGGG	.:.:::::.::..:  :.:.:	UCUAUGCUUUGUUU--UUCUU	Cleavage		1
+zma-miR159a	TCONS_00054544	5.0	-1.0	1	21	158	178	AGCUCC-UAUCAUUCCAAUGAA	  :.::  :: :::: ::::: 	AGCGUUUUAA-GAUAUGGAGCA	Translation		1
+zma-miR167a	TCONS_00054544	5.0	-1.0	1	21	245	265	GAAGC-UGCCAGCAUGAUCUAG	    ::: : .::::: :::::	UUCUAUCCU-UUGGCAAGCUUC	Cleavage		1
+zma-miR167b	TCONS_00054544	5.0	-1.0	1	21	245	265	GAAGC-UGCCAGCAUGAUCUAA	::  ::: : .::::: :::::	UUCUAUCCU-UUGGCAAGCUUC	Cleavage		1
+zma-miR167c	TCONS_00054544	5.0	-1.0	1	21	245	265	GAAGC-UGCCAGCAUGAUCUAG	    ::: : .::::: :::::	UUCUAUCCU-UUGGCAAGCUUC	Cleavage		1
+zma-miR167d	TCONS_00054544	5.0	-1.0	1	21	245	265	GAAGC-UGCCAGCAUGAUCUAG	    ::: : .::::: :::::	UUCUAUCCU-UUGGCAAGCUUC	Cleavage		1
+zma-miR167f	TCONS_00054544	5.0	-1.0	1	21	245	265	GAAGC-UGCCAGCAUGAUCUGA	    ::: : .::::: :::::	UUCUAUCCU-UUGGCAAGCUUC	Cleavage		1
+zma-miR171b	Zm-3	5.0	-1.0	1	21	14	34	GGUAUUGUUUCGGCUCAUGUC	 ... ::::: ::.:::::..	UGUGGGAGCCCAAGCAAUAUU	Translation		1
+zma-miR171h	Zm-3	5.0	-1.0	1	21	14	34	GGUAUUGUUUCGGCUCAUGUC	 ... ::::: ::.:::::..	UGUGGGAGCCCAAGCAAUAUU	Translation		1
+zma-miR171k	Zm-3	5.0	-1.0	1	21	14	34	GGUAUUGUUUCGGCUCAUGUC	 ... ::::: ::.:::::..	UGUGGGAGCCCAAGCAAUAUU	Translation		1
