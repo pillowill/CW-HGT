@@ -1,0 +1,31 @@
+# Conda environment for CW-HGT.
+#
+#   conda env create -f environment.yml
+#   conda activate cwhgt
+#
+# For CUDA builds of PyTorch/DGL, install them from the matching indices instead
+# of the versions below, e.g.
+#   pip install torch==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+#   pip install dgl==1.1.2 -f https://data.dgl.ai/wheels/cu118/repo.html
+# The exact export used for the reported results is in docs/environment.lock.yml.
+name: cwhgt
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - numpy=1.26
+  - pandas=2.1
+  - scipy=1.11
+  - scikit-learn=1.3
+  - tqdm
+  - pip
+  - pip:
+      - torch==2.1.2
+      - dgl==1.1.2
+      - scikit-network==0.31.0
+      - PyYAML>=6.0
+      - matplotlib>=3.5
+      - Cython>=3.0

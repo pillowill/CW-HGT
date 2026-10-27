@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "CW-HGT: lncRNA-miRNA abiotic stress association prediction with causal walks and a heterogeneous graph transformer"
+abstract: >-
+  CW-HGT predicts associations between lncRNAs/miRNAs and abiotic stresses in
+  plants. It combines a causal-walk sampler (with backdoor adjustment) over a
+  three-type heterogeneous graph with a heterogeneous graph transformer, and is
+  evaluated by 10-fold cross-validation on eight plant species.
+version: 2.0.0
+date-released: "2024-12-31"
+license: MIT
+repository-code: "https://github.com/pillowill/CW-HGT"
+keywords:
+  - lncRNA
+  - miRNA
+  - abiotic stress
+  - causal walk
+  - heterogeneous graph transformer
+  - link prediction
+authors:
+  - family-names: "Yu"
+    given-names: "He"

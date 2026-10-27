@@ -1,0 +1,47 @@
+# CW-HGT run configuration.
+#
+# Every field of cw_hgt.config.Config can be overridden here and/or on the
+# command line (CLI flags win over this file):
+#
+#   cw-hgt train --config configs/default.yaml
+
+# --- task -----------------------------------------------------------------
+DataClass: lnc_mi_stress_graphs
+pre_edge_type: l_s
+
+# --- data / graph ---------------------------------------------------------
+# node counts are re-derived from the built graph before the model is created
+num_lnc: 175
+num_mi: 500
+num_stress: 50
+kNN: 15
+kFold: 10
+num_NegativeSample: 1
+
+# --- causal walk ----------------------------------------------------------
+walk_type: CW
+p: 4.0
+q: 3
+NumMultiWalk: 1
+WalkLength: 5
+n_workers: 6
+
+# --- model ----------------------------------------------------------------
+HidDim: 128
+OutDim: 128
+nLayers: 5
+nHeaders: 2
+isHetero: true
+dropout: 0.5
+
+# --- optimisation ---------------------------------------------------------
+epochs: 200
+lr: 0.005
+weight_decay: 0.001
+seed: 3047
+
+# --- bookkeeping ----------------------------------------------------------
+dataset_dir: dataset
+output_dir: runs
+device: auto
+name: default

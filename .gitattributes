@@ -1,0 +1,17 @@
+# Normalise line endings in the repository, keep binaries binary.
+* text=auto eol=lf
+
+*.py   text eol=lf
+*.pyx  text eol=lf
+*.c    text eol=lf linguist-generated=true
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+
+*.pyd  binary
+*.so   binary
+*.pth  binary
+*.npz  binary
+*.fa   text
+*.csv  text

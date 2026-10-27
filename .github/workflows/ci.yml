@@ -1,0 +1,28 @@
+name: ci
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Deliberately minimal: torch/DGL are not installed in CI, so the tests that
+      # need them skip themselves via pytest.importorskip. This job guards the
+      # dependency-free layers (config, CLI, metrics, utils) and syntax.
+      - name: Install lightweight test dependencies
+        run: pip install numpy scikit-learn pytest pyyaml
+
+      - name: Byte-compile every module
+        run: python -m compileall -q cw_hgt scripts tests
+
+      - name: Run the dependency-free tests
+        run: pytest -q tests/test_config.py tests/test_cli.py tests/test_metrics.py tests/test_utils.py

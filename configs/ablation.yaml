@@ -1,0 +1,28 @@
+# Ablation configuration.
+#
+#   cw-hgt train --config configs/ablation.yaml --output-dir runs/ablation
+#
+# variant=ablation selects cw_hgt/data/ablation/*, which differs from the default
+# builders in three ways (see docs/data.md):
+#   * node features are standardised with sklearn's StandardScaler
+#   * the negative-sample graph is symmetrised and padded to fixed node blocks
+#   * off-diagonal adjacency blocks are zero-filled
+DataClass: lnc_mi_stress_graphs
+pre_edge_type: l_s
+variant: ablation
+
+kNN: 15
+kFold: 10
+walk_type: CW
+WalkLength: 5
+HidDim: 128
+OutDim: 128
+nLayers: 5
+nHeaders: 2
+epochs: 200
+lr: 0.005
+weight_decay: 0.001
+seed: 3047
+output_dir: runs
+device: auto
+name: ablation

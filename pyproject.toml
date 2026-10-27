@@ -1,0 +1,81 @@
+[build-system]
+requires = ["setuptools>=64", "wheel", "Cython>=3.0", "numpy>=1.21"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cw-hgt"
+version = "2.0.0"
+description = "lncRNA / miRNA abiotic-stress association prediction with causal walks and a heterogeneous graph transformer"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "He Yu" }]
+keywords = ["graph neural network", "lncRNA", "miRNA", "abiotic stress", "heterogeneous graph"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+# Keep runtime pins compatible with the environment the results were produced in
+# (torch 2.1 / dgl 1.1 / numpy 1.26); see docs/environment.lock.yml for the export.
+dependencies = [
+    "numpy>=1.21,<2",
+    "pandas>=1.5",
+    "scipy>=1.9",
+    "scikit-learn>=1.1",
+    "tqdm>=4.60",
+    "torch>=1.13",
+    "dgl>=1.0",
+    "scikit-network>=0.29",
+]
+
+[project.optional-dependencies]
+config = ["PyYAML>=6.0"]
+analysis = ["matplotlib>=3.5"]
+preprocess = ["fasttext-wheel", "requests"]
+dev = ["pytest>=7.0", "ruff>=0.1"]
+
+[project.urls]
+Homepage = "https://github.com/pillowill/CW-HGT"
+Issues = "https://github.com/pillowill/CW-HGT/issues"
+
+[project.scripts]
+cw-hgt = "cw_hgt.cli:main"
+
+[tool.setuptools]
+# Flat layout on purpose: `python -m cw_hgt` works straight from a clone, and the
+# prebuilt c_utils extension sits beside the package.
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["cw_hgt*"]
+
+[tool.setuptools.package-data]
+cw_hgt = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# Vendored optimiser and the reference HGT variant keep their upstream style.
+"cw_hgt/optim/ranger.py" = ["E", "F", "W", "UP", "B"]
+"cw_hgt/models/cw_hgt.py" = ["F401", "F841"]

@@ -1,0 +1,22 @@
+# Core runtime dependencies. Install with:
+#   pip install -e .            # package + console script
+#   pip install -r requirements.txt
+# Versions mirror the environment the reported results were produced in
+# (see docs/environment.lock.yml for the full conda export).
+numpy>=1.21,<2
+pandas>=1.5
+scipy>=1.9
+scikit-learn>=1.1
+tqdm>=4.60
+torch>=1.13
+dgl>=1.0
+scikit-network>=0.29
+
+# optional: reading YAML configs (--config)
+PyYAML>=6.0
+
+# optional: analysis plots
+matplotlib>=3.5
+
+# optional: rebuilding the Cython extension from c_utils.pyx
+Cython>=3.0

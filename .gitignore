@@ -1,22 +1,39 @@
-﻿# Python bytecode caches
+﻿# --- Python ---------------------------------------------------------------
 __pycache__/
 *.py[co]
-
-# Cython build intermediates (c_utils.c is kept in the repo for reference)
-build/
 *.egg-info/
-
-# Environments
+build/
+dist/
+.eggs/
 .venv/
 venv/
 .env
 
-# Editors / OS
+# --- Cython build intermediates -------------------------------------------
+# c_utils.c is committed (generated, but needed when Cython is unavailable);
+# the compiled extension is committed too, so that no compiler is required.
+*.so
+*.dll
+
+# --- Run artefacts --------------------------------------------------------
+runs/
+*.pth
+*.pt
+*.log
+
+# --- Derived data (regenerate with cw_hgt.preprocess) ---------------------
+dataset/adj/
+dataset/sim/
+
+# --- Test scratch --------------------------------------------------------
+.pytest-tmp/
+
+# --- Local scratch from scripts/smoke_check.py
+.smoke-work/
+.pytest_cache/
+
+# --- Editors / OS ---------------------------------------------------------
 .idea/
 .vscode/
 .DS_Store
 Thumbs.db
-
-# Run artifacts
-trained_models/
-*.log
