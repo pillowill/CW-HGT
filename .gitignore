@@ -1,0 +1,22 @@
+﻿# Python bytecode caches
+__pycache__/
+*.py[co]
+
+# Cython build intermediates (c_utils.c is kept in the repo for reference)
+build/
+*.egg-info/
+
+# Environments
+.venv/
+venv/
+.env
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Run artifacts
+trained_models/
+*.log
